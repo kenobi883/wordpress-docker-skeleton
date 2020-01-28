@@ -1,0 +1,20 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "1.*",
+        "wpackagist-plugin/advanced-custom-fields": "5.8.*"
+    },
+    "extra": {
+        "wordpress-install-dir": "/opt/bitnami/wordpress",
+        "installer-paths": {
+            "/opt/bitnami/wordpress/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "/opt/bitnami/wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "/opt/bitnami/wordpress/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

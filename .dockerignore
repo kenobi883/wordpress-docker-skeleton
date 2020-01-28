@@ -1,0 +1,13 @@
+# Composer dependencies
+vendor
+
+# WordPress config
+wordpress/wp-config.php
+
+# WordPress plugins, themes, files
+!wordpress/wp-content
+wordpress/wp-content/*
+
+# Bitnami hidden files
+wordpress/.initialized
+wordpress/.restored
